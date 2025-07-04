@@ -1068,10 +1068,12 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-openai" },
+    { name = "langchain-tavily" },
     { name = "langchain-text-splitters" },
     { name = "pip" },
     { name = "python-dotenv" },
     { name = "sentence-transformers" },
+    { name = "tavily-python" },
 ]
 
 [package.dev-dependencies]
@@ -1087,10 +1089,12 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.3.26" },
     { name = "langchain-core", specifier = ">=0.3.66" },
     { name = "langchain-openai", specifier = ">=0.3.25" },
+    { name = "langchain-tavily", specifier = ">=0.2.5" },
     { name = "langchain-text-splitters", specifier = ">=0.3.8" },
     { name = "pip", specifier = ">=25.1.1" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "sentence-transformers", specifier = ">=4.1.0" },
+    { name = "tavily-python", specifier = ">=0.7.9" },
 ]
 
 [package.metadata.requires-dev]
@@ -1177,6 +1181,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/f4/31/52c385ff5a6cc2576605c44f7b34c2f476b918db54a7ec7006f314628b10/langchain_openai-0.3.25.tar.gz", hash = "sha256:6dd33e4a2513cf915af6c2508e782d2c90956a88650739fd8d31e14bdb7f7e44", size = 688157, upload-time = "2025-06-23T15:02:26.344Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/65/bd/87b77f001f8aa90a54d9390c29ad462cd9f379d0ae57e125e0d079e8a57a/langchain_openai-0.3.25-py3-none-any.whl", hash = "sha256:a7d5c9d4f4ff2b6156f313e92e652833fdfd42084ecfd0980e719dc8472ea51c", size = 69171, upload-time = "2025-06-23T15:02:24.759Z" },
+]
+
+[[package]]
+name = "langchain-tavily"
+version = "0.2.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b8/7c/521dc3462ed7940b5f6aafab9308713bff7c4c2f7bb783beaa252a2d9405/langchain_tavily-0.2.5.tar.gz", hash = "sha256:7757693958563bcb98f1063b9e4c5d115babbeab5b36570694845c7c3117695b", size = 20668, upload-time = "2025-06-28T18:42:11.127Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/51/78a64038ce575280f5fccea97ed7a37a174a9f0b63516b6368bcf6d560bf/langchain_tavily-0.2.5-py3-none-any.whl", hash = "sha256:b33a0ef7392a48d2db0f4f00958528ecfe55802064692177646a4fb383ca3ebb", size = 24490, upload-time = "2025-06-28T18:42:09.978Z" },
 ]
 
 [[package]]
@@ -2663,6 +2682,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/83/d3/803453b36afefb7c2bb238361cd4ae6125a569b4db67cd9e79846ba2d68c/sympy-1.14.0.tar.gz", hash = "sha256:d3d3fe8df1e5a0b42f0e7bdf50541697dbe7d23746e894990c030e2b05e72517", size = 7793921, upload-time = "2025-04-27T18:05:01.611Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl", hash = "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5", size = 6299353, upload-time = "2025-04-27T18:04:59.103Z" },
+]
+
+[[package]]
+name = "tavily-python"
+version = "0.7.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "requests" },
+    { name = "tiktoken" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ad/c1/5956e9711313a1bcaa3b6462b378014998ce394bd7cd6eb43a975d430bc7/tavily_python-0.7.9.tar.gz", hash = "sha256:61aa13ca89e2e40d645042c8d27afc478b27846fb79bb21d4f683ed28f173dc7", size = 19173, upload-time = "2025-07-01T22:44:01.759Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3a/b4/14305cbf1e82ee51c74b1e1906ee70f4a2e62719dc8a8614f1fa562af376/tavily_python-0.7.9-py3-none-any.whl", hash = "sha256:6d70ea86e2ccba061d0ea98c81922784a01c186960304d44436304f114f22372", size = 15666, upload-time = "2025-07-01T22:43:59.25Z" },
 ]
 
 [[package]]

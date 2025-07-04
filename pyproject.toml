@@ -11,10 +11,12 @@ dependencies = [
     "langchain-community>=0.3.26",
     "langchain-core>=0.3.66",
     "langchain-openai>=0.3.25",
+    "langchain-tavily>=0.2.5",
     "langchain-text-splitters>=0.3.8",
     "pip>=25.1.1",
     "python-dotenv>=1.1.1",
     "sentence-transformers>=4.1.0",
+    "tavily-python>=0.7.9",
 ]
 
 [dependency-groups]
